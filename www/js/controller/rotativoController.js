@@ -6,6 +6,19 @@ function rotativoCtrl($scope,
                       Permanencia) {
   var self = this;
 
+  $scope.$on('$ionicView.enter', function(){
+     self.listarTodos();
+  });
+
+  self.listarTodos = function(){
+     Permanencia.all().then(function(result){
+       console.log('Result: ',result);
+
+
+       //self.permanencias = result;
+     });
+   };
+
   self.permanencia = {
     entrada : {
       moment:  moment(),
