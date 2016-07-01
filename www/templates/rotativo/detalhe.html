@@ -1,0 +1,41 @@
+<ion-view title="Rotativo" id="page2" class=" " style="">
+    <ion-content padding="true" class="has-header">
+      <h2 class="title">Detalhe</h2>
+      <div class="card">
+        <div class="item item-divider">
+          ENTRADA
+        </div>
+        <div class="item item-text-wrap">
+          {{self.permanencia.data_entrada | date : 'dd/MM/yyyy HH:mm'}} {{detalhe.horaEntrada}}
+        </div>
+        <div class="item item-divider">
+          SAÍDA
+        </div>
+        <div class="item item-text-wrap">
+          {{self.dataHoraSaida | date : 'dd/MM/yyyy HH:mm' }}
+        </div>
+      </div>
+      <div class="card">
+        <div class="item item-divider">
+          PERMANÊNCIA
+        </div>
+        <div class="item item-text-wrap">
+          {{self.tempo}}
+        </div>
+        <div class="item item-divider">
+          VALOR
+        </div>
+        <div class="item item-text-wrap" >
+          {{self.valor | currency}}
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col 50">
+          <button class="button button-block button-positive" ng-click="self.encerrar()">
+            Encerrar
+          </button>
+        </div>
+      </div>
+    </ion-content>
+</ion-view>

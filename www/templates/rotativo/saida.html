@@ -1,0 +1,13 @@
+<ion-view title="Rotativo" id="page2" class=" " style="">
+    <ion-content padding="true" class="has-header">
+      <h2 class="title">Veículos</h2>
+      <div class="list">
+        <div class="item item-button-right" ng-repeat="permanencia in permanencias">
+          {{permanencia.veiculo | uppercase}} - {{permanencia.placa | uppercase}}
+          <button class="button button-positive" ng-click="goToDetalhe(permanencia)">
+            <i class="ion-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </ion-content>
+</ion-view>

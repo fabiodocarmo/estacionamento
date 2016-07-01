@@ -1,0 +1,59 @@
+<ion-view title="Rotativo" id="page2" class=" " style="">
+    <ion-content padding="true" class="has-header">
+      <h2 class="title">Entrada</h2>
+      <div id="rotativo" class="list ">
+          <h4>PLACA</h4>
+          <div class="row">
+            <div class="col col-40">
+              <label class="item item-input item-floating-label " id="rotativo-input1">
+                <input type="text" ng-model="self.permanencia.placa.letras" ui-mask="AAA">
+              </label>
+            </div>
+            <div class="col col-60">
+              <label class="item item-input item-floating-label " id="rotativo-input3">
+                <input type="tel" ng-model="self.permanencia.placa.numeros" maxlength="4">
+              </label>
+            </div>
+          </div>
+          <h4>DATA</h4>
+          <div class="row">
+            <div class="col col-30">
+              <label class="item item-input item-floating-label " id="rotativo-input1">
+                <input placeholder="DIA" type="tel" ng-model="self.permanencia.entrada.data.dia" maxlength="2">
+              </label>
+            </div>
+            <div class="col col-30">
+              <label class="item item-input item-floating-label " id="rotativo-input3">
+                <input placeholder="MÊS" type="tel" ng-model="self.permanencia.entrada.data.mes" maxlength="2">
+              </label>
+            </div>
+            <div class="col col-30">
+              <label class="item item-input item-floating-label " id="rotativo-input3">
+                <input placeholder="ANO" type="tel" ng-model="self.permanencia.entrada.data.ano" maxlength="4">
+              </label>
+            </div>
+          </div>
+          <h4>HORA</h4>
+          <div class="row">
+            <div class="col col-50">
+              <label class="item item-input item-floating-label " id="rotativo-input3">
+                <input placeholder="Horas" type="number" ng-model="self.permanencia.entrada.hora.horas">
+              </label>
+            </div>
+            <div class="col col-50">
+              <label class="item item-input item-floating-label " id="rotativo-input3">
+                <input placeholder="Minutos" type="number" ng-model="self.permanencia.entrada.hora.minutos">
+              </label>
+            </div>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col col-50">
+          <button id="rotativo-button2" class=" button button-stable button-block button-outline" ng-click="self.limparCampos()">Limpar</button>
+        </div>
+        <div class="col col-50">
+          <button id="rotativo-button1" class=" button button-positive button-block" ng-click="self.iniciarPermanencia()">Salvar</button>
+        </div>
+      </div>
+    </ion-content>
+</ion-view>

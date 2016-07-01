@@ -1,0 +1,44 @@
+<ion-view title="Configuração" id="page3" class=" " style="">
+    <ion-content padding="true" class="has-header">
+      <h2 class="title"></h2>
+      <div id="rotativo" class="list ">
+          <div class="row">
+            <div class="col">
+              <label class="item item-input item-floating-label " id="rotativo-input4">
+                <span class="input-label">Valor Hora</span>
+                <input placeholder="R$ 4,00" type="number" ng-model="self.valor.hora" ng-pattern="/^[0-9]+(\.[0-9]{1,2})?$/">
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label class="item item-input item-floating-label " id="rotativo-input5">
+                  <span class="input-label">Valor Adicional</span>
+                  <input placeholder="R$ 1,00" type="number" ng-model="self.valor.adicional" ng-pattern="/^[0-9]+(\.[0-9]{1,2})?$/">
+              </label>
+            </div>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col col-50">
+          <button id="rotativo-button2" class=" button button-stable  button-block button-outline " ng-click="self.limparCampos()">Limpar</button>
+        </div>
+        <div class="col col-50">
+          <button id="rotativo-button1" class=" button button-positive  button-block " ng-click="self.salvarPreco(preco)">Salvar</button>
+        </div>
+      </div>
+
+      <div class="list card">
+        <a href="#" class="item item-icon-left">
+          <i class="icon ion-clock"></i>
+          Valor Hora: {{self.valor[0].hora | currency}}
+        </a>
+
+        <a href="#" class="item item-icon-left">
+          <i class="icon ion-plus-round"></i>
+          Valor Adicional: {{self.valor[0].adicional | currency}}
+        </a>
+
+      </div>
+    </ion-content>
+</ion-view>
