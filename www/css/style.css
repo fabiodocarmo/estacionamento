@@ -4,18 +4,34 @@
 }
 
 .button-large {
-    padding: 0 16px;
-    min-width: 265px;
-    min-height: 135px;
-    font-size: 35px;
-    line-height: 50px;
-    vertical-align: middle;
-    color: white;
+  padding: 0 16px;
+  min-width: 265px;
+  min-height: 135px;
+  font-size: 35px;
+  line-height: 50px;
+  vertical-align: middle;
+  color: white;
 }
 
 .button-large label{
-    vertical-align: top;
-    font-size: 35px;
+  vertical-align: top;
+  font-size: 35px;
+}
+
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"]{
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.card .item.item-input input, .list-inset .item.item-input input, .padding > .list .item.item-input input, .padding-horizontal > .list .item.item-input input {
+  padding-right: 5px;
+}
+
+.item-input {
+  padding: 5px 5px 5px 5px;
 }
 
 .platform-ios .manual-ios-statusbar-padding{
